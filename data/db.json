@@ -1,0 +1,126 @@
+{
+  "patients": [
+    {
+      "id": "pat_1",
+      "name": "Karthik Raja",
+      "age": 45,
+      "phone": "9876543210",
+      "tokenNumber": 101,
+      "priority": "normal",
+      "doctorId": "doc_3",
+      "status": "completed",
+      "createdAt": "2026-06-23T10:46:21.084Z",
+      "completedAt": "2026-06-23T10:56:21.086Z"
+    },
+    {
+      "id": "pat_2",
+      "name": "Mallika S.",
+      "age": 68,
+      "phone": "9812345678",
+      "tokenNumber": 102,
+      "priority": "senior",
+      "doctorId": "doc_3",
+      "status": "completed",
+      "createdAt": "2026-06-23T10:56:21.086Z",
+      "completedAt": "2026-06-23T11:06:21.086Z"
+    },
+    {
+      "id": "pat_3",
+      "name": "Anjali Devi",
+      "age": 28,
+      "phone": "9765432109",
+      "tokenNumber": 103,
+      "priority": "pregnant",
+      "doctorId": "doc_3",
+      "status": "in-progress",
+      "createdAt": "2026-06-23T11:06:21.087Z",
+      "calledAt": "2026-06-23T11:41:21.087Z"
+    },
+    {
+      "id": "pat_4",
+      "name": "Ramesh Chandran",
+      "age": 72,
+      "phone": "9654321098",
+      "tokenNumber": 104,
+      "priority": "senior",
+      "doctorId": "doc_3",
+      "status": "waiting",
+      "createdAt": "2026-06-23T11:16:21.087Z"
+    },
+    {
+      "id": "pat_5",
+      "name": "Sarika Murugan",
+      "age": 34,
+      "phone": "9543210987",
+      "tokenNumber": 105,
+      "priority": "normal",
+      "doctorId": "doc_3",
+      "status": "waiting",
+      "createdAt": "2026-06-23T11:21:21.087Z"
+    },
+    {
+      "id": "pat_6",
+      "name": "Suresh Pillai",
+      "age": 52,
+      "phone": "9432109876",
+      "tokenNumber": 106,
+      "priority": "emergency",
+      "doctorId": "doc_3",
+      "status": "waiting",
+      "createdAt": "2026-06-23T11:36:21.087Z"
+    },
+    {
+      "id": "pat_7",
+      "name": "Thilak M.",
+      "age": 22,
+      "phone": "9123456711",
+      "tokenNumber": 107,
+      "priority": "normal",
+      "doctorId": "doc_3",
+      "status": "waiting",
+      "createdAt": "2026-06-23T11:41:21.087Z"
+    }
+  ],
+  "consultations": [
+    {
+      "id": "con_1",
+      "patientId": "pat_1",
+      "doctorId": "doc_3",
+      "startTime": "2026-06-23T10:46:21.087Z",
+      "endTime": "2026-06-23T10:56:21.087Z",
+      "duration": 10
+    },
+    {
+      "id": "con_2",
+      "patientId": "pat_2",
+      "doctorId": "doc_3",
+      "startTime": "2026-06-23T10:56:21.087Z",
+      "endTime": "2026-06-23T11:06:21.087Z",
+      "duration": 10
+    },
+    {
+      "id": "con_3",
+      "patientId": "pat_3",
+      "doctorId": "doc_3",
+      "startTime": "2026-06-23T11:06:21.087Z"
+    }
+  ],
+  "fairnessLogs": [
+    {
+      "id": "log_1",
+      "tokenNumber": 104,
+      "action": "skip",
+      "reasonEn": "Patient did not respond to three consecutive loudspeaker announcements",
+      "reasonTa": "மூன்று முறை ஒலிபெருக்கியில் அழைத்தும் நோயாளி வரவில்லை",
+      "timestamp": "2026-06-23T11:18:01.087Z"
+    },
+    {
+      "id": "log_2",
+      "tokenNumber": 102,
+      "action": "recall",
+      "reasonEn": "Emergency patient bypass check requested by pediatrician for priority care",
+      "reasonTa": "குழந்தை நல மருத்துவரால் முன்னுரிமை சிகிச்சைக்காக அவசர நோயாளி அனுமதி கோரப்பட்டது",
+      "timestamp": "2026-06-23T11:26:21.087Z"
+    }
+  ]
+}

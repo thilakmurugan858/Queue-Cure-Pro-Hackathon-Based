@@ -1,0 +1,6 @@
+{
+  "name": "QueueCure Pro",
+  "description": "Real-time patient queue management, virtual queuing, smart wait-time prediction, speech synthesis queue announcements, and customized doctor specialization patient engagement tips.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

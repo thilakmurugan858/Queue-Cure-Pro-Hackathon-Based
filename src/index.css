@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-main: #F5F5F0;
+  --color-accent: #6B705C;
+  --color-accent-hover: #555949;
+  --color-priority-emergency: #E07A5F;
+  --color-priority-senior: #81B29A;
+  --color-priority-normal: #F2CC8F;
+  --color-token-bg: #E9EDC9;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #F5F5F0;
+  color: #3A3A35;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(107, 112, 92, 0.1);
+}
+
+.priority-emergency {
+  background-color: #E07A5F;
+  color: white;
+}
+
+.priority-senior {
+  background-color: #81B29A;
+  color: white;
+}
+
+.priority-normal {
+  background-color: #F2CC8F;
+  color: #3A3A35;
+}
+
+.token-box {
+  background: #E9EDC9;
+  border-left: 4px solid #6B705C;
+}
+
+.text-accent {
+  color: #6B705C;
+}
+
+.bg-accent {
+  background-color: #6B705C;
+}
+
+.bg-main {
+  background-color: #F5F5F0;
+}
+
+/* pulse-dot definition */
+.dot-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
